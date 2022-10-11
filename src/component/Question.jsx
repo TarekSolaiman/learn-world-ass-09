@@ -17,6 +17,12 @@ const Question = ({ question: questionall }) => {
     }
   };
 
+  const btnAnswer = () => {
+    return toast.success(correctAnswer, {
+      autoClose: 500,
+    });
+  };
+
   return (
     <div className="w-8/12 mx-auto my-10 p-5 lg:p-10 text-center text-blue-600 font-semibold shadow-xl bg-blue-100 rounded-xl border-2 border-blue-300">
       <h1 className="text-sm lg:text-2xl md:text-2xl">{question}</h1>
@@ -29,6 +35,12 @@ const Question = ({ question: questionall }) => {
           />
         ))}
       </div>
+      <button
+        onClick={btnAnswer}
+        className="mt-10 px-10 py-2 bg-blue-200 border-2 border-blue-400 rounded-lg hover:bg-blue-300 hover:text-white hover:shadow-lg"
+      >
+        Answer
+      </button>
     </div>
   );
 };
