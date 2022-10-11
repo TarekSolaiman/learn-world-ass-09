@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 
 const Question = ({ question: questionall }) => {
   console.log(questionall);
-  const { question, id, correctAnswer, options } = questionall;
+  const { question, correctAnswer, options } = questionall;
 
   const answerHendler = (answer) => {
     if (answer === correctAnswer) {
