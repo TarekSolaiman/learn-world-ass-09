@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import logo from "../image-bg/learnLogo.png";
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
   return (
     <header className="p-4 bg-gray-800 text-gray-100">
       <div className="container flex justify-between h-16 mx-auto">
@@ -16,8 +18,20 @@ const Header = () => {
             World
           </h1>
         </p>
-        <ul className="items-stretch hidden space-x-3 md:flex">
-          <li className="flex">
+        <button
+          onClick={() => setOpen(!open)}
+          className="flex h-6 w-6 text-white md:hidden lg:hidden"
+        >
+          {open ? <XMarkIcon /> : <Bars3Icon />}
+        </button>
+        <ul
+          className={
+            open
+              ? " text-justify absolute top-14 right-2 md:flex bg-gray-800"
+              : "items-center hidden space-x-3 md:flex bg-opacity-0"
+          }
+        >
+          <li>
             <NavLink
               rel="noopener noreferrer"
               to="/topic"
@@ -30,7 +44,7 @@ const Header = () => {
               Topic
             </NavLink>
           </li>
-          <li className="flex ">
+          <li>
             <NavLink
               rel="noopener noreferrer"
               to="/statistics"
@@ -43,7 +57,7 @@ const Header = () => {
               Statistics
             </NavLink>
           </li>
-          <li className="flex">
+          <li>
             <NavLink
               rel="noopener noreferrer"
               to="/blog"
@@ -57,22 +71,6 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
-        <button className="flex justify-end p-4 md:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
-        </button>
       </div>
     </header>
   );
