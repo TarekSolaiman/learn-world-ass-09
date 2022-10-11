@@ -1,3 +1,16 @@
+/--------------------------
+<-----------------------------Web site introduction----------------------------->
+
+This is Qize practice website for the beginner learner .
+This is single page website and full responsive site .
+Firs page is home page that call Topic .
+Ther so many 4 quiz topic .
+Socund page is chart page .The chart ready with quiz question quintity .
+And last page is Blog page .Ther was 3 question and answer
+
+<------------------------------||||||||||||||||||||------------------------------>
+-----------------------------/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
