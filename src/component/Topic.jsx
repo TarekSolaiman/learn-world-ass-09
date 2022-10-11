@@ -9,7 +9,7 @@ const Topic = () => {
   console.log(quizTopics);
   return (
     <div className="container m-auto flex-row items-center">
-      <div className="lg:flex items-center mx-auto justify-center mx-20">
+      <div className="lg:flex items-center justify-center mx-20">
         <div>
           <img className="lg:w-4/5" src={learnBG} alt="" />
         </div>
@@ -24,7 +24,7 @@ const Topic = () => {
             concepts. By the end, you'll know whether Data Science, Computer
             Science or Web Development is right for you.
           </p>
-          <div className="flex">
+          <div className="flex ">
             <Link to="/blog">
               <button className="mt-5 border-2 border-blue-500 rounded-lg w-40 h-10 hover:bg-blue-300 text-xl font-medium text-blue-400 hover:text-white">
                 Blog

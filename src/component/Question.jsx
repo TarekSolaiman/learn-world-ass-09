@@ -19,8 +19,8 @@ const Question = ({ question: questionall }) => {
 
   return (
     <div className="w-8/12 mx-auto my-10 p-10 text-center text-blue-600 font-semibold shadow-xl bg-blue-100 rounded-xl border-2 border-blue-300">
-      <h1 className="text-2xl">{question}</h1>
-      <div className="grid grid-cols-2 gap-5 mt-5">
+      <h1 className="text-1xl lg:text-2xl md:text-2xl">{question}</h1>
+      <div className="grid lg:grid-cols-2 gap-5 mt-5">
         {options.map((option) => (
           <OptionBTN option={option} answerHendler={answerHendler} />
         ))}
@@ -33,7 +33,7 @@ const OptionBTN = ({ option, answerHendler }) => {
   return (
     <div
       onClick={() => answerHendler(option)}
-      className="bg-blue-200 p-10 text-2xl font-medium text-blue-600 rounded-xl border-2 border-blue-400 shadow-xl hover:shadow-sm"
+      className="bg-blue-200 p-10 lg:text-2xl md:text-2xl font-medium text-blue-600 rounded-xl border-2 border-blue-400 shadow-xl hover:shadow-sm"
     >
       <p>{option}</p>
     </div>
