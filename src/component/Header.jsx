@@ -8,9 +8,11 @@ const Header = () => {
       <div className="container flex justify-between h-16 mx-auto">
         <p className="flex items-center p-2">
           <img className="h-14" src={logo} alt="" />
-          <h1 className="text-3xl font-semibold">
+          <h1 className="text-1xl lg:text-3xl font-semibold">
             {" "}
-            <span className="text-5xl text-blue-400 font-bold">LEARN</span>{" "}
+            <span className="text-3xl lg:text-5xl text-blue-400 font-bold">
+              LEARN
+            </span>{" "}
             World
           </h1>
         </p>

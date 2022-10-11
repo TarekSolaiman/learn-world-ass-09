@@ -13,9 +13,11 @@ const AllTopic = ({ topic }) => {
         />
       </div>
       <div className="text-center">
-        <p className="text-5xl font-bold my-5 text-center">{name}</p>
+        <p className="text-3xl lg:text-5xl font-bold my-5 text-center">
+          {name}
+        </p>
         <Link to={`/topic/${id}`}>
-          <button className="w-60 h-10 mt-5 rounded-lg text-lg font-semibold bg-blue-400 hover:bg-blue-500 hover:text-white hover:shadow-xl">
+          <button className="w-40 lg:w-60 h-10 mt-5 rounded-lg text-lg font-semibold bg-blue-400 hover:bg-blue-500 hover:text-white hover:shadow-xl">
             Quiz Start
           </button>
         </Link>
