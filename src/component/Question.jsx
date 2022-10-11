@@ -22,20 +22,35 @@ const Question = ({ question: questionall }) => {
       <h1 className="text-1xl lg:text-2xl md:text-2xl">{question}</h1>
       <div className="grid lg:grid-cols-2 gap-5 mt-5">
         {options.map((option) => (
-          <OptionBTN option={option} answerHendler={answerHendler} />
+          <OptionBTN
+            option={option}
+            correctAnswer={correctAnswer}
+            answerHendler={answerHendler}
+          />
         ))}
       </div>
     </div>
   );
 };
 
-const OptionBTN = ({ option, answerHendler }) => {
+const OptionBTN = ({ option, correctAnswer, answerHendler }) => {
+  console.log(option);
   return (
-    <div
-      onClick={() => answerHendler(option)}
-      className="bg-blue-200 p-10 lg:text-2xl md:text-2xl font-medium text-blue-600 rounded-xl border-2 border-blue-400 shadow-xl hover:shadow-sm"
-    >
-      <p>{option}</p>
+    <div className="relative">
+      <input
+        className="absolute top-2 left-2"
+        type="radio"
+        id={option}
+        name={`answer${correctAnswer}`}
+      />
+      <label for={option}>
+        <div
+          onClick={() => answerHendler(option)}
+          className="bg-blue-200 p-10 lg:text-2xl md:text-2xl font-medium text-blue-600 rounded-xl border-2 border-blue-400 shadow-xl hover:shadow-sm"
+        >
+          {option}
+        </div>
+      </label>
     </div>
   );
 };
