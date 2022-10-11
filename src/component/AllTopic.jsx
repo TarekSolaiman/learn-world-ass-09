@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const AllTopic = ({ topic }) => {
   const { id, name, logo } = topic;
   return (
-    <div className="flex bg-gray-100 my-10 p-10 mx-auto items-center w-8/12 rounded-xl shadow-xl hover:shadow-sm">
+    <div className="lg:flex bg-gray-100 my-10 p-10 mx-auto items-center w-8/12 rounded-xl shadow-xl hover:shadow-sm">
       <div>
         <img className="w-3/5 bg-black rounded-full" src={logo} alt="" />
       </div>

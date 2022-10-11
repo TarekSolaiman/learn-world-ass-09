@@ -13,7 +13,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Blog from "../component/Blog";
 import ErrorPage from "../component/ErrorPage";
 import Main from "../component/Root/Main";
-import Quiz from "../component/Root/Quiz";
+import Quiz from "../component/Quiz";
 import Statistics from "../component/Statistics";
 import Topic from "../component/Topic";
 

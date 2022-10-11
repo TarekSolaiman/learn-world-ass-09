@@ -22,20 +22,20 @@ const Header = () => {
               className={({ isActive }) =>
                 isActive
                   ? "flex items-center px-4 -mb-1 dark:border-transparent text-blue-400 text-xl font-semibold"
-                  : "flex items-center px-4 -mb-1 dark:border-transparent text-xl font-semibold"
+                  : "flex items-center px-4 -mb-1 dark:border-transparent text-xl font-semibold hover:text-blue-400"
               }
             >
               Topic
             </NavLink>
           </li>
-          <li className="flex">
+          <li className="flex ">
             <NavLink
               rel="noopener noreferrer"
               to="/statistics"
               className={({ isActive }) =>
                 isActive
                   ? "flex items-center px-4 -mb-1 dark:border-transparent text-blue-400 text-xl font-semibold"
-                  : "flex items-center px-4 -mb-1 dark:border-transparent text-xl font-semibold"
+                  : "flex items-center px-4 -mb-1 dark:border-transparent text-xl font-semibold hover:text-blue-400"
               }
             >
               Statistics
@@ -48,7 +48,7 @@ const Header = () => {
               className={({ isActive }) =>
                 isActive
                   ? "flex items-center px-4 -mb-1 dark:border-transparent text-blue-400 text-xl font-semibold"
-                  : "flex items-center px-4 -mb-1 dark:border-transparent text-xl font-semibold"
+                  : "flex items-center px-4 -mb-1 dark:border-transparent text-xl font-semibold hover:text-blue-400"
               }
             >
               Blog
