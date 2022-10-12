@@ -25,7 +25,7 @@ const Question = ({ question: questionall }) => {
 
   return (
     <div className="w-8/12 mx-auto my-10 p-5 lg:p-10 text-center text-blue-600 font-semibold shadow-xl bg-blue-100 rounded-xl border-2 border-blue-300 relative">
-      <button className="absolute top-30 right-3" onClick={btnAnswer}>
+      <button className="absolute top-2 right-2" onClick={btnAnswer}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

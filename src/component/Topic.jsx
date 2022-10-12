@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 
 const Topic = () => {
   const quizTopics = useContext(QuizConext);
-  console.log(quizTopics);
   return (
     <div className="container m-auto flex-row items-center">
       <div className="lg:flex items-center justify-center mx-5 lg:mx-20">

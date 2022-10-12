@@ -6,7 +6,7 @@ import logo from "../image-bg/learnLogo.png";
 const Header = () => {
   const [open, setOpen] = useState(false);
   return (
-    <header className="p-4 bg-gray-800 text-gray-100">
+    <header className="p-4 bg-gray-800 text-gray-100 sticky top-0">
       <div className="container flex justify-between h-16 mx-auto">
         <p className="flex items-center p-2">
           <img className="h-14" src={logo} alt="" />
