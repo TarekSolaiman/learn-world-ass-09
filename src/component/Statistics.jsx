@@ -14,13 +14,8 @@ import {
 const Statistics = () => {
   const quizTopics = useContext(QuizConext);
   return (
-    <div>
-      <ResponsiveContainer
-        className="mx-auto my-28"
-        width="70%"
-        height={300}
-        maxWidth={300}
-      >
+    <div className="sticky top-10">
+      <ResponsiveContainer className="mx-auto my-28" width="70%" height={300}>
         <BarChart
           // width={200}
           // height={100}
