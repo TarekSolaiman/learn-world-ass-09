@@ -70,6 +70,19 @@ const Header = () => {
               Blog
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              rel="noopener noreferrer"
+              to="/about"
+              className={({ isActive }) =>
+                isActive
+                  ? "flex items-center px-4 -mb-1 dark:border-transparent text-blue-400 text-xl font-semibold"
+                  : "flex items-center px-4 -mb-1 dark:border-transparent text-xl font-semibold hover:text-blue-400"
+              }
+            >
+              About
+            </NavLink>
+          </li>
         </ul>
       </div>
     </header>

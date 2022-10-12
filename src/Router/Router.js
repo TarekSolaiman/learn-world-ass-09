@@ -16,6 +16,7 @@ import Main from "../component/Root/Main";
 import Quiz from "../component/Quiz";
 import Statistics from "../component/Statistics";
 import Topic from "../component/Topic";
+import About from "../component/About";
 
 export const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ export const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog />,
+      },
+      {
+        path: "/about",
+        element: <About />,
       },
       {
         path: "/topic/:id",
