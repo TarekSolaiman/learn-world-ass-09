@@ -20,15 +20,15 @@ const Header = () => {
         </p>
         <button
           onClick={() => setOpen(!open)}
-          className="flex h-6 w-6 text-white md:hidden lg:hidden"
+          className="flex h-6 w-6 mt-5 text-blue-400 md:hidden lg:hidden"
         >
           {open ? <XMarkIcon /> : <Bars3Icon />}
         </button>
         <ul
           className={
             open
-              ? " text-justify absolute top-14 right-2 md:flex bg-gray-800"
-              : "items-center hidden space-x-3 md:flex bg-opacity-0"
+              ? " text-justify absolute top-14 right-2 md:flex bg-gray-800 py-5 md:py-0"
+              : "items-center hidden space-x-3 md:flex"
           }
         >
           <li>
